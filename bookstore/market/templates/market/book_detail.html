@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.name }}</title>
+</head>
+<body>
+    <h1>{{ book.name }}</h1>
+    <img src="{{ book.image.url }}" alt="{{ book.name }}" class="book-image">
+    <p>Author: {{ book.author_name }}</p>
+    <p>Page Count: {{ book.page_count }}</p>
+    <p>Category: {{ book.category }}</p>
+    <p>Price: ${{ book.price }}</p>
+</body>
+</html>
+
+<style>
+.book-image {
+    width: 200px;
+    height: auto;
+}
+</style>
